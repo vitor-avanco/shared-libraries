@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": ["lodash"],
             "outputPath": "dist/datepicker",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -30,7 +31,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["node_modules/moment/locale/pt-br.js"]
           },
           "configurations": {
             "production": {
