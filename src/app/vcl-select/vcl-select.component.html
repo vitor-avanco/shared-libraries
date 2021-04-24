@@ -1,0 +1,46 @@
+<div class="vcl-select">
+  <span [id]="componentsId.label" class="vcl-select__label">ordernar por</span>
+  <div>
+    <button
+        aria-haspopup="listbox"
+        attr.aria-labelledby="{{componentsId.label}} {{componentsId.button}}"
+        [id]="componentsId.button"
+        [attr.aria-expanded]="show"
+        (click)="toggle()"
+        (keydown.shift.tab)="tabKeyPress($event, true)"
+        class="vcl-select__btn"
+    >
+        {{selectedOption.label}}
+
+        <span aria-hidden="true" class="vcl-select__arrow icon-itaufonts_seta_down" [ngClass]="{'vcl-select__arrow--rotate' : show}"></span>
+    </button>
+    <ul [id]="componentsId.list"
+        role="listbox"
+        [attr.aria-labelledby]="componentsId.selected"
+        class="vcl-select__list"
+        [hidden]="!show"
+        [attr.aria-activedescendant]="selectedOption.id">
+
+      <li *ngFor="let item of optionsList; let index = index; trackBy: trackByIdentity"
+          class="vcl-select__item {{componentsId.list}}"
+          [ngClass]="{'vcl-select__item--disabled': item.disabled}"
+          id="{{componentsId.list}}{{index}}"
+          tabindex="0"
+          role="option"
+          [attr.aria-disabled]="item.disabled"
+          [attr.aria-selected]="selectedOption.value == item.value"
+          (click)="setSelectValue(index, item.disabled)"
+          (keyup.enter)="setSelectValue(index, item.disabled)"
+          (keyup.space)="setSelectValue(index, item.disabled)"
+          (keyup.arrowup)="navigationListFocus(index, 'up')"
+          (keyup.arrowdown)="navigationListFocus(index, 'down')"
+          (keydown.tab)="tabKeyPress($event, false, index)"
+      >
+        {{item.label}}
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+

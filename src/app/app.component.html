@@ -1,7 +1,11 @@
-<div style="margin: auto; text-align: center;">
-
+<div style="margin: 20px auto; max-width: 980px;">
+<h2>Datepicker</h2>
 <button vclCalendar disabledWeekend="true" (chosenDate)="teste($event)" [currentDate]="data">abrir calendario</button>
 
-{{data}}
+
+  <div style="max-width: 300px;">
+    <h2>Select</h2>
+    <vcl-select [optionsList]="optionsList" (optionSelected)="itemSelecionado($event)"></vcl-select>
+  </div>
 </div>
 
