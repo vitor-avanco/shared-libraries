@@ -1,5 +1,6 @@
 import { Component, ElementRef, HostListener, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { ISelect, ISelectOutput } from './iselect.interface';
+import { Search } from './search';
 
 
 @Component({
@@ -11,6 +12,12 @@ import { ISelect, ISelectOutput } from './iselect.interface';
 
 export class VclSelectComponent implements OnInit {
 
+  @Input() initialValue: string;
+
+  @Input() searchPlaceholder = 'filtrar';
+
+  @Input() showSearch = false;
+
   @Input() optionsList: Array<ISelect>;
 
   @Output() optionSelected = new EventEmitter();
@@ -20,6 +27,12 @@ export class VclSelectComponent implements OnInit {
   timestamp = new Date().getTime();
 
   show = false;
+
+  a11yFeedbackText: string;
+
+  list: Array<ISelect>;
+
+  search = new Search();
 
   componentsId = {
     label: `vclSelectLabel${this.timestamp}`,
@@ -33,6 +46,33 @@ export class VclSelectComponent implements OnInit {
   toggle = () => this.show = !this.show;
 
   trackByIdentity = (index: number, item: any) => item;
+
+  filterList = (text: string) => {
+    if (!text || text === ''){
+      this.list = this.optionsList;
+      return;
+    }
+    this.list = this.optionsList.filter(item => item.label.includes(text) || item.value.includes(text));
+    this.a11yFeedback();
+  }
+
+  a11yFeedback = () => {
+
+    this.a11yFeedbackText = '';
+
+    if (!this.list.length){
+      this.a11yFeedbackText = 'nenhum resultado encontrado';
+    }
+
+    if (this.list.length === 1){
+      this.a11yFeedbackText = '1 resultado encontrado';
+    } else {
+      this.a11yFeedbackText = `${this.list.length} resultados encontrados`;
+    }
+
+    setTimeout( () => this.a11yFeedbackText = '', 1000);
+
+  }
 
   setSelectValue = (listIndex: number, isDisabled: boolean) => {
     if (isDisabled){
@@ -86,15 +126,21 @@ export class VclSelectComponent implements OnInit {
 
   ngOnInit(): void {
     this.componentsId.selected = this.componentsId.label;
+    this.list = this.optionsList;
 
-    this.optionsList.find( item => {
+    this.list.find( item => {
+      if (this.initialValue && this.initialValue === item.value){
+        this.selectedOption = item;
+        return false;
+      }
       if (item.selected){
         this.selectedOption = item;
+        return false;
       }
     });
 
     if (!this.selectedOption) {
-      this.selectedOption = this.optionsList[0];
+      this.selectedOption = this.list[0];
     }
   }
 

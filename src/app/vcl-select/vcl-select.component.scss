@@ -1,14 +1,35 @@
 .vcl-select {
   position: relative;
 
+  .sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  }
+
   .vcl-select {
-    &__label{
+
+    &__warning{
+      font-family: "Itau Text", Arial;
+      font-size: 16px;
+      line-height: 24px;
+      color: #252220;
+      padding: 14px 24px;
+    }
+
+    &__label {
       font-family: "Itau Text", Arial;
       font-size: 14px;
       color: #605751;
       line-height: 20px;
       display: block;
     }
+
     &__btn {
       position: relative;
       background: none;
@@ -46,10 +67,8 @@
       }
     }
 
-    &__list{
+    &__wrap{
       position: absolute;
-      margin: 0;
-      padding: 0;
       top: 100%;
       left: 0;
       overflow-y: auto;
@@ -59,9 +78,36 @@
       background: #fff;
       box-shadow: 0 0 0.125rem 0 rgb(0 0 0 / 16%), 0 0.125rem 0.5rem 0 rgb(0 0 0 / 18%);
       border-radius: 0 0 .25rem .25rem;
+
+      input {
+        width: 100%;
+        display: block;
+        padding: 14px 24px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #D9D9D9;
+        background: none;
+        font-family: "Itau Text", Arial;
+        font-size: 16px;
+        line-height: 24px;
+        margin: auto;
+
+        color: #252220;
+        &:hover, &:focus{
+          border-bottom: 2px solid #ec7000;
+        }
+      }
+      &--search{
+        max-height: 262px;
+      }
     }
 
-    &__item{
+    &__list {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
       background: none;
       margin: 0;
       padding: 14px 24px;
@@ -72,12 +118,12 @@
       line-height: 24px;
       color: #252220;
 
-      &--disabled{
+      &--disabled {
         color: #aaa;
         cursor: default;
       }
 
-      &:not(.vcl-select__item--disabled)[aria-selected=true]{
+      &:not(.vcl-select__item--disabled)[aria-selected=true] {
         border-left-color: #ec7000;
         background: #efe9e5;
         color: #252220;
@@ -86,7 +132,7 @@
       }
 
 
-      &:not(.vcl-select__item--disabled):hover{
+      &:not(.vcl-select__item--disabled):hover {
         background: #56504c;
         color: #fff;
       }

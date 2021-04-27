@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VclSelectComponent } from './vcl-select.component';
@@ -9,7 +10,8 @@ import { VclSelectComponent } from './vcl-select.component';
     VclSelectComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     VclSelectComponent
