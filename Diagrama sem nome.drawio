@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2023-05-21T23:48:48.269Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="uChgkQHQbF8U5kSl6H_Y" version="21.3.2" type="github">
+  <diagram name="Página-1" id="w-p5Ae15d1W9unrE6qTG">
+    <mxGraphModel dx="1430" dy="732" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-5" value="&lt;b&gt;&lt;font face=&quot;Tahoma&quot;&gt;Serviços&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeWidth=1;dashed=1;strokeColor=default;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="11" y="14" width="120" height="337" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-1" value="A11y Feedback" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="111" width="100" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-3" value="Google Analytics" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="51" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-4" value="Navigation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="81" width="100" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-8" value="Environments" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="141" width="100" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-9" value="Token Management" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="171" width="100" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-10" value="&lt;b&gt;&lt;font face=&quot;Tahoma&quot;&gt;Estruturantes&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeWidth=1;dashed=1;strokeColor=default;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="158" y="14" width="123" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-11" value="AppDy Logger" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="201" width="100" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-12" value="Menu" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="51" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-13" value="Busca" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="78" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-14" value="Troca Conta / Perfil" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="105" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-15" value="Convivência" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="231" width="100" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-16" value="H2O / Warnings" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="134" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-17" value="Área do Cliente" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="162" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-18" value="Tipo Visão" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="261" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-20" value="Home Container" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="190" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-21" value="Scope ???" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="290" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-22" value="&lt;font face=&quot;Tahoma&quot;&gt;&lt;b&gt;User Preferences&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeWidth=1;dashed=1;strokeColor=default;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="305" y="14" width="136" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-23" value="Favoritos" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="51" width="112" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-24" value="Atalhos/ Mais acessados" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="78" width="113" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-26" value="Customização" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="323" y="105" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-27" value="Personalização" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="323.5" y="132" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-31" value="&lt;b&gt;&lt;font face=&quot;Tahoma&quot;&gt;Business Feature&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeWidth=1;dashed=1;strokeColor=default;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="458" y="14" width="123" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-32" value="Chat / Gerente" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="469.5" y="51" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-33" value="Carrinho" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="469.5" y="78" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AUBx4SotxPpRX_jlAVSK-34" value="User Tracking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=9;fontStyle=0;horizontal=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="319" width="100" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
